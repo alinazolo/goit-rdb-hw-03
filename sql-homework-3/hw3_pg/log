@@ -1,0 +1,24 @@
+2026-10-31 14:07:08.820 CET [25622] LOG:  starting PostgreSQL 16.2 on aarch64-apple-darwin23.5.0, compiled by Apple clang version 15.0.0 (clang-1500.0.40.1), 64-bit
+2026-10-31 14:07:08.820 CET [25622] LOG:  listening on Unix socket "/Users/macbook/Documents/Python/goit-rdb-hw-03/sql-homework-3/hw3_pg/.s.PGSQL.5432"
+2026-10-31 14:07:08.823 CET [25625] LOG:  database system was shut down at 2026-10-31 14:07:08 CET
+2026-10-31 14:07:08.826 CET [25622] LOG:  database system is ready to accept connections
+2026-10-31 14:12:08.814 CET [25623] LOG:  checkpoint starting: time
+2026-10-31 14:12:13.077 CET [25623] LOG:  checkpoint complete: wrote 45 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.259 s, sync=0.001 s, total=4.265 s; sync files=11, longest=0.001 s, average=0.001 s; distance=266 kB, estimate=266 kB; lsn=0/14E54A8, redo lsn=0/14E5470
+2026-10-31 14:17:08.068 CET [25623] LOG:  checkpoint starting: time
+2026-10-31 14:18:17.188 CET [25623] LOG:  checkpoint complete: wrote 682 buffers (4.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=69.104 s, sync=0.003 s, total=69.120 s; sync files=30, longest=0.001 s, average=0.001 s; distance=4164 kB, estimate=4164 kB; lsn=0/1908A28, redo lsn=0/18F6718
+2026-10-31 14:32:08.173 CET [25623] LOG:  checkpoint starting: time
+2026-10-31 14:32:13.092 CET [25623] LOG:  checkpoint complete: wrote 48 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.913 s, sync=0.002 s, total=4.920 s; sync files=40, longest=0.001 s, average=0.001 s; distance=219 kB, estimate=3770 kB; lsn=0/1953320, redo lsn=0/192D640
+2026-10-31 14:37:08.086 CET [25623] LOG:  checkpoint starting: time
+2026-10-31 14:37:12.277 CET [25623] LOG:  checkpoint complete: wrote 42 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.171 s, sync=0.012 s, total=4.192 s; sync files=34, longest=0.007 s, average=0.001 s; distance=235 kB, estimate=3416 kB; lsn=0/1968438, redo lsn=0/1968400
+2026-10-31 14:52:08.258 CET [25623] LOG:  checkpoint starting: time
+2026-10-31 14:53:28.970 CET [25623] LOG:  checkpoint complete: wrote 795 buffers (4.9%); 0 WAL file(s) added, 0 removed, 1 recycled; write=80.704 s, sync=0.002 s, total=80.712 s; sync files=13, longest=0.001 s, average=0.001 s; distance=9857 kB, estimate=9857 kB; lsn=0/2308C30, redo lsn=0/2308BF8
+2026-10-31 14:57:08.966 CET [25623] LOG:  checkpoint starting: time
+2026-10-31 14:57:09.279 CET [25623] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.306 s, sync=0.001 s, total=0.314 s; sync files=2, longest=0.001 s, average=0.001 s; distance=7 kB, estimate=8872 kB; lsn=0/230AAC8, redo lsn=0/230AA90
+2026-10-31 15:31:25.849 CET [29780] ERROR:  syntax error at or near "-" at character 220
+2026-10-31 15:31:25.849 CET [29780] STATEMENT:  SELECT
+	  COUNT(trip_distance) AS n_non_null,
+	  MIN(trip_distance) AS min_value,
+	  MAX(trip_distance) AS max_value,
+	  ROUND(AVG(trip_distance), 2) AS avg_value,
+	  ROUND(STDDEV_SAMP(trip_distance), 2) AS sd_value
+	FROM hw3-taxi_trips;

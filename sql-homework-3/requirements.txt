@@ -1,0 +1,11 @@
+pgserver
+psycopg[binary]
+psycopg2-binary
+sqlalchemy
+pandas
+pyarrow
+ucimlrepo
+ipykernel
+jupyter
+ipython-sql
+prettytable
